@@ -1,11 +1,26 @@
 from typing import List
 from fastapi import FastAPI, Depends, HTTPException
+from fastapi.middleware.cors import CORSMiddleware # Import CORSMiddleware
 from sqlmodel import Session, select
 
 from .database import create_db_and_tables, get_session
 from .models import Product, Testimonial, School, ContactFormSubmission
 
 app = FastAPI()
+
+# Configure CORS
+origins = [
+    "http://localhost:3000", # Allow your Next.js frontend
+    "http://127.0.0.1:3000", # In case browser resolves to 127.0.0.1
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
 
 @app.on_event("startup")
 def on_startup():
