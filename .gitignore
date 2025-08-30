@@ -2,3 +2,5 @@ database.db
 venv/
 backend/__pycache__/
 backend/__pycache__/*
+
+project_summary.md
