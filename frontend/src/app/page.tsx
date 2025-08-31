@@ -34,6 +34,7 @@ export default function Home() {
           src="https://placehold.co/1200x800/e0e7ff/1e3a8a/png?text=NSD+Uniforms+Hero"
           alt="Background Image"
           fill
+          priority
           className="z-0 object-cover"
         />
         <div className="absolute inset-0 bg-blue-900 opacity-70 z-10"></div>
@@ -125,28 +126,28 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-blue-800 mb-12">Our Uniform Collections</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 relative">
               <Image src="https://placehold.co/500x400/e0e7ff/1e3a8a/png?text=Primary+School" alt="Primary School Uniform" fill className="w-full h-64 object-cover" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-blue-700">Primary School</h3>
                 <p className="text-gray-600">Comfortable & Durable</p>
               </div>
             </div>
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 relative">
               <Image src="https://placehold.co/500x400/e0e7ff/1e3a8a/png?text=High+School" alt="High School Uniform" fill className="w-full h-64 object-cover" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-blue-700">High School</h3>
                 <p className="text-gray-600">Smart & Stylish</p>
               </div>
             </div>
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 relative">
               <Image src="https://placehold.co/500x400/e0e7ff/1e3a8a/png?text=Sports+Wear" alt="Sports Uniform" fill className="w-full h-64 object-cover" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-blue-700">Sports Wear</h3>
                 <p className="text-gray-600">Flexible & Breathable</p>
               </div>
             </div>
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 relative">
               <Image src="https://placehold.co/500x400/e0e7ff/1e3a8a/png?text=Corporate" alt="Corporate Uniform" fill className="w-full h-64 object-cover" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-blue-700">Corporate</h3>

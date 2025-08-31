@@ -29,6 +29,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+    unoptimized: true, // Disable image optimization in development
     // Add these if you are on Next.js 16 or higher to configure default image quality
     // quality: 75,
   },
